@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href='{% static "css/bootstrap.min.css" %}'/>
+    <link rel="stylesheet" href='{% static "css/dashboard.css" %}'/>
     <!-- <link rel="stylesheet" href='{% static "css/payment" %}'/> -->
     <link rel="shortcut icon" href="{% static 'images/logo.png' %}" type="image/x-icon">
 
@@ -180,7 +181,9 @@
         <hr>
       </div>
       <div class="black">
+        <a href="{% url 'profile' %}" style="text-decoration:none; color: white;">
         <p><img src="https://img.icons8.com/material/24/FFFFFF/user-male-circle--v1.png"/> Profile</p>
+        <a/>
         <hr>
       </div>
       <div class="black">
@@ -217,7 +220,7 @@
             <div class="row justify-content-around" style ="min-height: 150px;">
 
 
-            <a href="" style="text-decoration:none; color: white;"> 
+            <a href="{% url 'profile' %}" style="text-decoration:none; color: white;"> 
               <div class="col col-2 bg-info text-white rounded T-pro" >
                 <div class="row">
                   <div class="col-12 card-1 bg-info" 
@@ -240,12 +243,7 @@
   
               <div class="col col-2 text-white rounded T-add" >
                 <div class="row">
-                  <div class="col-12 card-2" style="font-weight: 501;
-                  margin-left: 0px;
-                  margin-bottom: 15px;
-                  font-family: Arial, Helvetica, sans-serif;
-                  font-size: x-large;
-                  margin-top: 16px;"> Admission Form </div>
+                  <div class="col-12 card-2" > Admission Form </div>
                   <div class="col-6" id="add-icon"><img src="static/images/align-center.svg" alt="" class="img-icon"></div>
                 </div>
               </div>
@@ -253,12 +251,7 @@
   
               <div class="col col-2 text-white rounded T-pay">
                 <div class="row">
-                  <div class="col-12 card-3" style="font-weight: 501;
-                  margin-left: 0px;
-                  margin-bottom: 15px;
-                  font-family: Arial, Helvetica, sans-serif;
-                  font-size: x-large;
-                  margin-top: 16px;"> Payment </div>
+                  <div class="col-12 card-3" > Payment </div>
                   <div class="col-6" id="pay-icon"><img src="static/images/credit-card.svg" alt="" ></div>
                 </div>
               </div>
@@ -266,16 +259,13 @@
   
               <div class="col col-2 text-white rounded T-fee">
                 <div class="row">
-                <div class="col-12 card-3" style="font-weight: 501;
-                margin-left: 0px;
-                margin-bottom: 15px;
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: x-large;
-                margin-top: 16px;"> Fee Receipt </div>
+                <div class="col-12 card-3"> Fee Receipt </div>
                 <div class="col-6" id="fee-icon"><img src="static/images/file-text.svg" alt="" ></div>
               </div>
           {% if user.is_authenticated %}
+
         <!-- <h4 class="text-center">Welcome to Dashboard</h4> -->
+
         <h3>Hello {{ fname }}&nbsp;{{ lname }}</h3>
         <h4>You're successfully logged in.</h4>
             

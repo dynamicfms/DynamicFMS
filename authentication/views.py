@@ -182,5 +182,14 @@ def admissionform(request):
             return redirect('home')
     return render(request, "authentication/admissionform.html")
 
+def forgetpassword(request):
+    return render(request, 'forgetpassword.html')
+
+def profile(request):
+    return render(request, 'authentication/profile.html')
+
+def about(request):
+    return render(request, 'authentication/about.html')
+
 def onlinepayment(request):
     return render(request, "authentication/onlinepayment.html")
