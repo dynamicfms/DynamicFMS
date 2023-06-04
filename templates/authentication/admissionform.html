@@ -64,7 +64,9 @@
       .form-group input[type="email"]:focus,
       .form-group input[type="tel"]:focus,
       .form-group input[type="date"]:focus,
-      .form-group textarea:focus {
+      .form-group textarea:focus
+      .fname
+      .lname{
         border-color: #4caf50;
         outline: none;
       }
@@ -131,8 +133,9 @@
         border: none;
         outline: none;
         display: inline-block;
+        font-size: 16px;
+        transition: border-color 0.3s ease;
         }
-        
     </style>
   </head>
   <body>
@@ -152,10 +155,10 @@
        
       </div>
       
-      <label for="fname" style="font-weight: bold; color: #333333;">Name:</label><br><br>
-      <input type="text" placeholder="First Name" required id="name" name="user name">
+      <label for="name" style="font-weight: bold; color: #333333;">Name:</label><br><br>
+      <input type="text" placeholder="First Name" required id="name" name="user name" class="fname">
   
-      <input type="text2" placeholder="Last Name" required id="name" name="user name">
+      <input type="text" placeholder="Last Name" required id="name" name="user name" class="lname">
       
       <br>
        <div>
@@ -186,7 +189,6 @@
             name="email"
             required
             placeholder="abc@gmail.com"
-            disabled
           />
         </div>
         <div class="form-group">

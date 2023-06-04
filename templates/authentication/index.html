@@ -20,9 +20,6 @@
         background-repeat: no-repeat;
       }
 
-
-
-      
       footer {
         position: fixed;
         bottom: 0;
@@ -36,7 +33,7 @@
       footer {
         background-color: #343a40;
         color: #ffcc00;
-        padding: 40px;
+        padding: 20px;
       }
 
       .footer-container {
@@ -81,7 +78,7 @@
     </div>
     <nav
       class="navbar sticky-top navbar-expand-md bg-dark navbar-dark"
-      style="padding: 10px"
+      style="padding: 5px"
     >
       <div class="container">
         <!-- Brand -->
@@ -116,7 +113,7 @@
               <a class="nav-link text-white" href="{% url 'about' %}" style="text-decoration:none; color: white;">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Contact Us</a>
+              <a class="nav-link text-white" href="{% url 'contact' %}" style="text-decoration:none; color: white;">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -130,8 +127,7 @@
                 value="Sign Up"
               >
                 Sign Up
-              </button></a
-            >
+              </button></a>
           </li>
           <li class="mx-2 nav-item">
             <a href="/signin"
@@ -145,8 +141,7 @@
             <a href="/signout"
               ><button type="submit" class="btn btn-outline-light form-control">
                 Sign Out
-              </button></a
-            >
+              </button></a>
           </li>
           {% endif %}
         </ul>

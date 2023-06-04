@@ -1,5 +1,5 @@
 body{
-    background-color:rgba(140, 40, 22, 0.525) !important;
+    background-color:rgba(201, 57, 32, 0.662) !important;
 }
 * {
     padding: 0;
@@ -12,10 +12,10 @@ body{
     /* padding-left: 30px; */
   }
   #card{
-    background-color:rgba(51, 40, 40, 0.845);
+    background-color:rgba(152, 44, 44, 0.845);
   }
   #card-subtitle{
-    margin-top: 5rem !important;
+    margin-top: 0rem !important;
     margin-bottom: 1.5rem;
     font-size: 2rem;
   }

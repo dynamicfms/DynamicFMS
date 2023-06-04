@@ -193,3 +193,6 @@ def about(request):
 
 def onlinepayment(request):
     return render(request, "authentication/onlinepayment.html")
+
+def contact(request):
+    return render(request, "authentication/contact.html")
