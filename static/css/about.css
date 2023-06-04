@@ -12,10 +12,17 @@ body{
     /* padding-left: 30px; */
   }
   #card{
-    background-color:rgba(153, 133, 133, 0.594);
+    background-color:rgba(51, 40, 40, 0.845);
   }
   #card-subtitle{
-    margin-top: 0.5rem !important;
+    margin-top: 5rem !important;
     margin-bottom: 1.5rem;
     font-size: 2rem;
+  }
+  #card-title{
+    margin-bottom: 1.5rem;
+
+  }
+  #card-text{
+    margin-bottom: 5rem;
   }

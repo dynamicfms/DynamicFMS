@@ -242,20 +242,24 @@
               {% comment %} Admission Form {% endcomment %}
   
               <div class="col col-2 text-white rounded T-add" >
+                <a href="{% url 'admissionform' %}" target="_blank" style="text-decoration: none; color:white;">
                 <div class="row">
-                  <div class="col-12 card-2" > Admission Form </div>
+                  <div class="col-12 card-2" > Admission Form </div></a>
                   <div class="col-6" id="add-icon"><img src="static/images/align-center.svg" alt="" class="img-icon"></div>
                 </div>
               </div>
   
   
+
+              
               <div class="col col-2 text-white rounded T-pay">
+                <a href="{% url 'onlinepayment' %}" target="_blank" style="text-decoration: none; color:white">
                 <div class="row">
-                  <div class="col-12 card-3" > Payment </div>
+                  <div class="col-12 card-3" > Payment </div></a>
                   <div class="col-6" id="pay-icon"><img src="static/images/credit-card.svg" alt="" ></div>
                 </div>
               </div>
-  
+            
   
               <div class="col col-2 text-white rounded T-fee">
                 <div class="row">
@@ -266,9 +270,9 @@
 
         <!-- <h4 class="text-center">Welcome to Dashboard</h4> -->
 
-        <h3>Hello {{ fname }}&nbsp;{{ lname }}</h3>
+        {% comment %} <h3>Hello {{ fname }}&nbsp;{{ lname }}</h3>
         <h4>You're successfully logged in.</h4>
-            
+             {% endcomment %}
         </div>
         
         {% endif %}

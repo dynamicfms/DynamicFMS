@@ -6,8 +6,14 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
     />
+    <link rel="stylesheet" href="static/css/admissionform.css">
+
+    
     <style>
       body {
+        margin: 0;
+        background-size: cover;
+        background-color: azure;
         font-family: "Roboto", Arial, sans-serif;
         background-color: #f7f7f7;
         padding: 20px;
@@ -44,7 +50,7 @@
       .form-group input[type="date"],
       .form-group input[type="file"],
       .form-group textarea {
-        width: 100%;
+        width: 95%;
         padding: 12px;
         font-size: 16px;
         border: 1px solid #e0e0e0;
@@ -117,25 +123,44 @@
       .form-group .button-container button:hover {
         background-color: #45a049;
       }
+      input[type="text"],input[type="text2"]{
+        width: 45%;
+        padding: 15px;
+        margin-left: 0px;
+        border-radius: 3px;
+        border: none;
+        outline: none;
+        display: inline-block;
+        }
+        
     </style>
   </head>
   <body>
     <div class="container">
       <h2>Addmission Form</h2>
       <form action="#" method="post">
+        <h3 class="p-details" style="text-align: center;">Personal Details </h3>
         <div class="form-group">
           <label for="enrollment-number">Enrollment/Application Number:</label>
           <input
             type="text"
             id="enrollment-number"
             name="enrollment-number"
+            placeholder="Enrollment/Application"
             required
           />
+       
+      </div>
+      
+      <label for="fname" style="font-weight: bold; color: #333333;">Name:</label><br><br>
+      <input type="text" placeholder="First Name" required id="name" name="user name">
+  
+      <input type="text2" placeholder="Last Name" required id="name" name="user name">
+      
+      <br>
+       <div>
         </div>
-        <div class="form-group">
-          <label for="full-name">Full Name:</label>
-          <input type="text" id="full-name" name="full-name" required />
-        </div>
+        <br>
         <div class="form-group">
           <label for="gender">Gender:</label>
           <div class="gender-options">
@@ -160,7 +185,7 @@
             id="email"
             name="email"
             required
-            placeholder="{{ email }}"
+            placeholder="abc@gmail.com"
             disabled
           />
         </div>
@@ -170,7 +195,11 @@
         </div>
         <div class="form-group">
           <label for="phone">Phone Number:</label>
-          <input type="tel" id="phone" name="phone" required />
+          <input type="tel" id="phone" name="phone" placeholder="999*******" required />
+        </div>
+        <div class="form-group">
+          <label for="address">Address:</label>
+          <textarea id="address" name="address" rows="4" required></textarea>
         </div>
         <div class="form-group">
           <label for="adhar-number">Aadhaar Card Number:</label>
@@ -189,6 +218,7 @@
             <label for="adhar-upload"><span>Choose File</span></label>
           </div>
         </div>
+        <h3 style="text-align: center;">Educational Details </h3>
         <div class="form-group">
           <label for="10th-marks">10th Grade Marks:</label>
           <input type="text" id="10th-marks" name="10th-marks" required />
@@ -206,10 +236,7 @@
             required
           />
         </div>
-        <div class="form-group">
-          <label for="address">Address:</label>
-          <textarea id="address" name="address" rows="4" required></textarea>
-        </div>
+        
         <div class="form-group">
           <label for="optional-info">Optional Information:</label>
           <textarea id="optional-info" name="optional-info" rows="4"></textarea>
